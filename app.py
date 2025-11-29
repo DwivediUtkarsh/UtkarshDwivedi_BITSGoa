@@ -68,7 +68,7 @@ async def health():
     return {"status": "healthy"}
 
 
-@app.post("/extract-bill-data")
+@app.post("/api/v1/hackrx/run")
 async def extract_bill_data(request: ExtractionRequest):
     """
     Extract line items from a bill document.
